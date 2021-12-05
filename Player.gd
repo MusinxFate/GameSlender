@@ -11,8 +11,8 @@ var papeis = 0
 
 signal signalStamina
 
-const RAY_LENGTH = 1000.0
 onready var camera : Camera = get_node("CameraOrbit/Camera")
+onready var flashlight : SpotLight = get_node("CameraOrbit/Camera/SpotLight")
 onready var raycast : RayCast = get_node("CameraOrbit/Camera/RayCast")
 onready var staminaCounter : Timer = get_parent().get_node("Resources/StaminaCounter")
 onready var recoverStamina : Timer = get_parent().get_node("Resources/RecoverStamina")
@@ -29,17 +29,23 @@ func _physics_process(delta):
 	var camera_x = camera.global_transform.basis.x
 	var camera_z = camera.global_transform.basis.z
 	
-	
+
 	if raycast.is_colliding():
 		var object = raycast.get_collider()
 		print(object.name)
-		if (object.name == "Papel"):
+		if (object.name == "Paper"):
 			if Input.is_action_just_pressed("click"):
 				papeis += 1
 				((object as StaticBody).get_parent() as MeshInstance).visible = false
 				object.free()
-				get_parent().get_node("Resources/Announce").text = str(papeis) + " Papeis Coletados"
+				if (papeis > 1):
+					get_parent().get_node("Resources/Announce").text = str(papeis) + " Papeis Coletados"
+				else:
+					get_parent().get_node("Resources/Announce").text = str(papeis) + " Papel Coletado"
 				get_parent().get_node("Resources/Animations").play("PaperFound")
+
+	if Input.is_action_just_pressed("rightclick"):
+		flashlight.visible = !flashlight.visible
 
 	if Input.is_action_just_pressed("sprint"):
 		if (stamina < 25 && maxStamina > 25):

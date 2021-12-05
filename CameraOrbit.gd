@@ -6,7 +6,7 @@ var maxLookAngle : float = 1.0
 var mouseDelta : Vector2 = Vector2()
 onready var player = get_parent()
 onready var camera = get_node("Camera")
-onready var raycast = get_node("Camera/RayCast")
+#onready var flashlight = get_node("Camera/SpotLight")
 
 func _input(event):  
 	if event is InputEventMouseMotion: mouseDelta = event.relative
