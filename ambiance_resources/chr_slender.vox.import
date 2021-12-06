@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/chr_slender.vox-25fe8d7ebf2d03dfbab40fdefeee5eca.mesh"
+
+[deps]
+
+source_file="res://ambiance_resources/chr_slender.vox"
+dest_files=[ "res://.import/chr_slender.vox-25fe8d7ebf2d03dfbab40fdefeee5eca.mesh" ]
+
+[params]
+

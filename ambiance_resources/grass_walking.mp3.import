@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/grass_walking.mp3-3210a8635c83f8e310e658867316a863.mp3str"
+
+[deps]
+
+source_file="res://ambiance_resources/grass_walking.mp3"
+dest_files=[ "res://.import/grass_walking.mp3-3210a8635c83f8e310e658867316a863.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

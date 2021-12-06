@@ -14,6 +14,10 @@ config/name="ProjetoSlender"
 run/main_scene="res://Spatial.tscn"
 config/icon="res://icon.png"
 
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/MagicaVoxelImporter/plugin.cfg" )
+
 [input]
 
 ui_left={

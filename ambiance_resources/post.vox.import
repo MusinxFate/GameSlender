@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/post.vox-2bc6129018200148af57d088ad5ba248.mesh"
+
+[deps]
+
+source_file="res://ambiance_resources/post.vox"
+dest_files=[ "res://.import/post.vox-2bc6129018200148af57d088ad5ba248.mesh" ]
+
+[params]
+

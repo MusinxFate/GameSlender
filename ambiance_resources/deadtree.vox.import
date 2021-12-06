@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/deadtree.vox-206257c945fb5187003dfd36a0f063a4.mesh"
+
+[deps]
+
+source_file="res://ambiance_resources/deadtree.vox"
+dest_files=[ "res://.import/deadtree.vox-206257c945fb5187003dfd36a0f063a4.mesh" ]
+
+[params]
+

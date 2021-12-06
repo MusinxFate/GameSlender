@@ -32,7 +32,7 @@ func _physics_process(delta):
 
 	if raycast.is_colliding():
 		var object = raycast.get_collider()
-		print(object.name)
+#		print(object.name)
 		if (object.name == "Paper"):
 			if Input.is_action_just_pressed("click"):
 				papeis += 1

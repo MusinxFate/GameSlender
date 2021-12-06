@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/stone.vox-ec3c04b831c9ef9e5703e09692b05050.mesh"
+
+[deps]
+
+source_file="res://ambiance_resources/stone.vox"
+dest_files=[ "res://.import/stone.vox-ec3c04b831c9ef9e5703e09692b05050.mesh" ]
+
+[params]
+
