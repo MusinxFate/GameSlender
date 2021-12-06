@@ -33,8 +33,10 @@ func _physics_process(delta):
 	if raycast.is_colliding():
 		var object = raycast.get_collider()
 #		print(object.name)
-		if (object.name == "Paper"):
+		if (str("paper").to_lower() in str(object.name).to_lower()):
 			if Input.is_action_just_pressed("click"):
+				if (str("special").to_lower() in str(object.name).to_lower()):
+					get_parent().get_node("Resources/ScaryPaperSound").play()
 				papeis += 1
 				((object as StaticBody).get_parent() as MeshInstance).visible = false
 				object.free()

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Forest.ogg-13ee143afc9c6f991b40bbaabab0f500.oggstr"
+
+[deps]
+
+source_file="res://ambiance_resources/Forest.ogg"
+dest_files=[ "res://.import/Forest.ogg-13ee143afc9c6f991b40bbaabab0f500.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
